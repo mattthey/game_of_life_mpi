@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.22.1)
 project(game_of_life_mpi)
 
 set(CMAKE_CXX_STANDARD 17)

@@ -5,7 +5,7 @@
 #include <cstdlib>
 
 // Константы для размера сетки и количества итераций
-const int ROWS = 100;
+const int ROWS = 96;
 const int COLS = 1000;
 const int ITERATIONS = 1000;
 
@@ -108,7 +108,7 @@ int main(int argc, char** argv) {
 
     auto endTime = std::chrono::system_clock::now(); // Остановка таймера
     std::chrono::duration<double> elapsedSeconds = endTime - startTime;
-    std::cout << "Elapsed time: " << elapsedSeconds.count() << " sec" << std::endl; // Вывод времени выполнения
+    std::cout << "Elapsed time: " << elapsedSeconds.count() << " sec" << " rank " << rank << std::endl; // Вывод времени выполнения
 
     MPI_Finalize();
     return 0;
